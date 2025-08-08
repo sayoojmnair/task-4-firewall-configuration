@@ -71,7 +71,6 @@ Screenshots included in `/screenshots/`:
 ## 📄 Files in this Repository
 - `README.md` — Documentation of the process.
 - `/screenshots/` — Folder containing all screenshots.
-- `firewall-task4.pdf` — Exported PDF report (if required).
 
 ---
 
