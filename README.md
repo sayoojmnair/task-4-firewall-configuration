@@ -31,57 +31,40 @@ To configure and test firewall rules in Windows Defender Firewall with Advanced 
 - Ran:
   ```cmd
   telnet 127.0.0.1 23
-Connection failed as expected, showing the message:
 
-vbnet
-Copy
-Edit
-Connecting To 127.0.0.1...Could not open connection to the host, on port 23: Connect failed
-This confirmed the block rule worked.
+The connection failed as expected, confirming that the block rule worked.
 
-4. Created Inbound Rule to Allow SSH (Optional)
-Selected New Rule → Port.
+### 4. Created Inbound Rule to Allow SSH (Optional)
+- Selected **New Rule → Port**.
+- Protocol: **TCP**, Local Port: **22**.
+- Chose **Allow the connection**.
+- Applied to **All Profiles**.
+- Named the rule **Allow SSH**.
 
-Protocol: TCP, Local Port: 22.
+### 5. Removed the Telnet Rule
+- Located **Block Telnet** in Inbound Rules.
+- Right-clicked and chose **Delete**.
+- Confirmed removal.
+- Verified in the inbound rules list that **Block Telnet** no longer appeared.
 
-Chose Allow the connection.
+---
 
-Applied to All Profiles.
+## 📷 Screenshots
+Screenshots included in `/screenshots/`:
+1. Creating the Block Telnet rule.
+2. Rule properties showing TCP port 23.
+3. Telnet connection failure in Command Prompt.
+4. Creating the Allow SSH rule.
+5. Deleting the Block Telnet rule.
 
-Named the rule Allow SSH.
+---
 
-5. Removed the Telnet Rule
-Located Block Telnet in Inbound Rules.
+## 📄 Files in this Repository
+- `README.md` — Documentation of the process.
+- `/screenshots/` — Folder containing all screenshots.
+- `firewall-task4.pdf` — Exported PDF report (if required).
 
-Right-clicked and chose Delete.
+---
 
-Confirmed removal.
-
-Verified in the inbound rules list that Block Telnet no longer appeared.
-
-📷 Screenshots
-Screenshots included in /screenshots/:
-
-Creating the Block Telnet rule.
-
-Rule properties showing TCP port 23.
-
-Telnet connection failure in Command Prompt.
-
-Creating the Allow SSH rule.
-
-Deleting the Block Telnet rule.
-
-📄 Files in this Repository
-README.md — Documentation of the process.
-
-/screenshots/ — Folder containing all screenshots.
-
-firewall-task4.pdf — Exported PDF report (if required).
-
-✅ Conclusion
+## ✅ Conclusion
 The firewall was successfully configured to block Telnet access and allow SSH traffic. Testing confirmed that the block rule was effective, preventing connections on port 23. The optional SSH rule allowed secure remote access. Finally, the Telnet block rule was removed to demonstrate rule management. These configurations help in securing the system by controlling access to specific ports and protocols.
-
-pgsql
-Copy
-Edit
