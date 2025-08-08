@@ -51,6 +51,7 @@ The connection failed as expected, confirming that the block rule worked.
 
 ## 📷 Screenshots
 Screenshots included in `/screenshots/`:
+
 1-firewall-inbound-rules.png – Inbound rules list showing Block Telnet.
 
 2-block-telnet-properties.png – Block Telnet properties showing TCP port 23.
