@@ -51,11 +51,19 @@ The connection failed as expected, confirming that the block rule worked.
 
 ## 📷 Screenshots
 Screenshots included in `/screenshots/`:
-1. Creating the Block Telnet rule.
-2. Rule properties showing TCP port 23.
-3. Telnet connection failure in Command Prompt.
-4. Creating the Allow SSH rule.
-5. Deleting the Block Telnet rule.
+1-firewall-inbound-rules.png – Inbound rules list showing Block Telnet.
+
+2-block-telnet-properties.png – Block Telnet properties showing TCP port 23.
+
+3-block-telnet-name.png – Wizard “Name” step for Block Telnet rule.
+
+4-telnet-connection-failed.png – Telnet connection failure in Command Prompt.
+
+5-allow-ssh-name.png – Wizard “Name” step for Allow SSH rule.
+
+6-allow-ssh-properties.png – Allow SSH properties showing TCP port 22.
+
+7-delete-block-telnet.png – Confirmation dialog for deleting Block Telnet rule.
 
 ---
 
